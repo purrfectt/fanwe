@@ -1,0 +1,80 @@
+</div>
+<div class="blank"></div>
+<div id="ftw">
+        <div id="ft">
+            <ul class="cf">
+            	{foreach from=$deal_help item=help_cate name="help_cate"}
+				<li class="col hp{$smarty.foreach.help_cate.iteration}">
+                    <h3>{$help_cate.title}</h3>
+                    <ul class="sub-list">
+						{foreach from=$help_cate.help_list item=help_item}
+						<li><a href="{$help_item.url}" {if $help_item.new eq 1}target="_blank"{/if}>{$help_item.title}</a></li>
+						{/foreach}             
+					</ul>
+                </li>  
+				{/foreach}            
+				<li class="col end">
+                    <div class=logo-footer>
+                    	<a href="{$APP_ROOT}/" title="{function name="app_conf" value="SHOP_TITLE"}">
+                    	<?php
+							$this->_var['logo_image'] = app_conf("FOOTER_LOGO");
+						?>
+						{function name="load_page_png" v=$logo_image}
+						</a>
+					</div>
+                </li>
+            </ul>
+			<div class="blank"></div>
+			{if $f_link_data}
+			<div class="flink">
+			{foreach from=$f_link_data item=link_group}			
+				<span style="color:#ccc; float:left; padding:5px 10px 5px 0px;">{$link_group.name}</span>
+				{foreach from=$link_group.links item=link}
+					<a href="http://{$link.url}" target="_blank" title="{if $link.description}{$link.description}{else}{$link.name}{/if}">{if $link.img neq ''}<img src='{$link.img}' alt="{if $link.description}{$link.description}{else}{$link.name}{/if}" />{else}{$link.name}{/if}</a>
+				{/foreach}
+				<div class="blank1"></div>
+			{/foreach}
+			</div>		
+			<div class="blank"></div>
+			{/if}
+			<div class="tc">
+			{foreach from=$system_article item=sys_item key=key}
+			{if $key gt 0}&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;{/if}<a href="{$sys_item.url}" title="{$sys_item.title}">{$sys_item.title}</a>
+			{/foreach}
+			</div>
+            <div class=copyright>
+            	{if app_conf("SHOP_TEL") neq ''}
+				{$LANG.TEL}：{function name="app_conf" value="SHOP_TEL"} {function name="app_conf" value="ONLINE_TIME"}  
+				&nbsp;&nbsp;
+				{/if}				
+				{function name="app_conf" value="ICP_LICENSE"}&nbsp;&nbsp;
+				{function name="app_conf" value="COUNT_CODE"}
+				<div class="blank1"></div>	
+				{function name="app_conf" value="SHOP_FOOTER"} 
+				<div class="blank"></div>				
+				{if app_conf("ONLINE_QQ") neq '' or app_conf("ONLINE_MSN") neq ''}
+				{foreach from=$online_msn item=msn}
+				{if $msn neq ''}
+				<a id=service-msn-help href="msnim:chat?contact={$msn}" target=_blank>
+					<img src="{$TMPL}/images/button-custom-msn.gif">
+				</a> 
+				{/if}
+				{/foreach}
+				{foreach from=$online_qq item=qq}
+				{if $qq neq ''}
+				<a href="http://wpa.qq.com/msgrd?v=3&uin={$qq}&site=qq&menu=yes" target=_blank>
+					<img alt="" src="{$TMPL}/images/button-custom-qq.gif">
+				</a>
+				{/if}
+				{/foreach}				
+				<div class="blank1"></div>
+				{/if}
+				
+            </div>
+        </div>
+    </div>
+
+
+	<div id="gotop"></div>
+</body>
+</html>
