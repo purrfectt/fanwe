@@ -12,7 +12,7 @@ filter_request($_REQUEST);
 filter_request($_GET);
 filter_request($_POST);
 define("AUTH_NOT_LOGIN", 1); //未登录的常量
-define("AUTH_NOT_AUTH", 2);  //未授权常量
+define("AUTH_NOT_AUTH", 2);  //未授权常量 
 
 // 全站公共函数库
 // 更改系统配置, 当更改数据库配置时为永久性修改， 修改配置文档中配置为临时修改
