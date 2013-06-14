@@ -66,10 +66,10 @@ echo parse_url_tag("u:youhui|store|".""."");
 				<div class="filter_title">类别</div>
 				<div class="filter_item clearfix">
 					<ul>
-					<?php $_from = $this->_var['cate_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'cate_item_0_27230900_1345512889');if (count($_from)):
-    foreach ($_from AS $this->_var['cate_item_0_27230900_1345512889']):
+					<?php $_from = $this->_var['cate_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'cate_item');if (count($_from)):
+    foreach ($_from AS $this->_var['cate_item']):
 ?>
-					<li><a href="<?php echo $this->_var['cate_item_0_27230900_1345512889']['url']; ?>" title="<?php echo $this->_var['cate_item_0_27230900_1345512889']['name']; ?>"><?php echo $this->_var['cate_item_0_27230900_1345512889']['name']; ?></a>&nbsp;<span>(<?php echo $this->_var['cate_item_0_27230900_1345512889']['count']; ?>)</span></li>
+					<li><a href="<?php echo $this->_var['cate_item']['url']; ?>" title="<?php echo $this->_var['cate_item']['name']; ?>"><?php echo $this->_var['cate_item']['name']; ?></a>&nbsp;<span>(<?php echo $this->_var['cate_item']['count']; ?>)</span></li>
 					<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 					</ul>
 				</div>
