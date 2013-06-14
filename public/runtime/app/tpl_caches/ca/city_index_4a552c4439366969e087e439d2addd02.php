@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/city_index.html";i:1;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/inc/header.html";i:2;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/inc/footer.html";}s:7:"expires";i:1370701193;s:8:"maketime";i:1370697593;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/city_index.html";i:1;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/inc/header.html";i:2;s:96:"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/fanwe/app/Tpl/fanwe/inc/footer.html";}s:7:"expires";i:1371225663;s:8:"maketime";i:1371222063;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" />
